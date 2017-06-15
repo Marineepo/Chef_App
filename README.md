@@ -1,24 +1,13 @@
-# README
+Chef App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1.x Home page
+2.Page for recipes(blog my recipes)
+3.Measurements/Time cooking Page
+4.Blog for users to put recipes
+5.about me page
 
-Things you may want to cover:
+admin/admin user-dashboard
+ability to create/sign-up to create blogs
+   (user can only change there own blog)
+   
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

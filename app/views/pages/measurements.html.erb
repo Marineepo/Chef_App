@@ -1,2 +1,18 @@
-<h1>Pages#measurements</h1>
-<p>Find me in app/views/pages/measurements.html.erb</p>
+<h1>Welcome to the Measurements page</h1>
+<p>Here you will find every measurement for your cooking needs</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#"><div><%= link_to "measurements", pages_measurements_path%></div></a>
+    <a href="#"><div><%= link_to "about_me", pages_about_me_path%></div></a>
+  </div>
+</div>
+
+<div id="header">
+  <ul>
+    <div id="logo"><%= image_tag "6caf5704d27a771629de0ed976fafcb0.jpg" %></div>
+  </ul>
+</div>
+
+<h2>Below are Special Measurements</h2>
