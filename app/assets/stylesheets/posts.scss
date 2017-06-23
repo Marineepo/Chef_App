@@ -1,0 +1,21 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+@import "gritter";
+
+
+.h1 {
+  color: grey;
+  text-align: center;
+}
+
+.p {
+    padding-left: 75px;
+    text-align: center;
+    color: grey;
+    padding-right: 75px;
+    font-size: 18px;
+}
+
+

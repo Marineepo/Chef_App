@@ -3,12 +3,33 @@
   <head>
     <title>ChefApp</title>
     <%= csrf_meta_tags %>
+  
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    
+    <div class="container test">
+      <div class="row">
+        <div class='nav'>
+          <%= link_to "Home", root_path%>
+          <%= link_to "Measurements", pages_measurements_path%>
+          <%= link_to "My Recipes", posts_path%>
+          <%= link_to "About me", pages_about_me_path%>
+          <%= link_to "Blogs", blogs_path%>
+        </div>
+      </div>
+   </div>
     <%= yield %>
   </body>
 </html>
+
+
+
+
+
+
+
+
