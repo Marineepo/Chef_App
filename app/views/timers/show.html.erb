@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Timer title:</strong>
+  <%= @timer.timer_title %>
+</p>
+
+<p>
+  <strong>Timer1:</strong>
+  <div class="clock"></div>
+</p>
+
+<!--<p>-->
+<!--  <strong>Timer2:</strong>-->
+<!--  <div class="clock2"></div>-->
+<!--</p>-->
+
+<!--<p>-->
+<!--  <strong>Timer3:</strong>-->
+<!--  <div class="clock3"></div>-->
+<!--</p>-->
+
+<!--<p>-->
+<!--  <strong>Timer4:</strong>-->
+<!--  <div class="clock4"></div>-->
+<!--</p>-->
+
+<!--<p>-->
+<!--  <strong>Timer5:</strong>-->
+<!--  <div class="clock5"></div>-->
+<!--</p>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
+
+<script type="text/javascript">
+
+	time_diff = <%= @timer1 %>;
+// 	time_diff2 = <%#= @timer2 %>;
+// 	time_diff3 = <%#= @timer3 %>;
+// 	time_diff4 = <%#= @timer4 %>;
+// 	time_diff5 = <%#= @timer5 %>;
+	
+
+	var clock = $('.clock').FlipClock(time_diff, {
+		countdown: true
+	});
+// 	var clock2 = $('.clock2').FlipClock(time_diff2, {
+// 		countdown: true
+// 	});
+// 	var clock3 = $('.clock3').FlipClock(time_diff3, {
+// 		countdown: true
+// 	});
+// 	var clock4 = $('.clock4').FlipClock(time_diff4, {
+// 		countdown: true
+// 	});
+// 	var clock5 = $('.clock5').FlipClock(time_diff5, {
+// 		countdown: true
+// 	});
+	
+</script>
+
+
+
+<%= link_to 'Edit', edit_timer_path(@timer) %> |
+<%= link_to 'Back', timers_path %>

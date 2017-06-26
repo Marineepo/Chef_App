@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :timers
   resources :comments
   resources :posts
   resources :blogs

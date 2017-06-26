@@ -22,7 +22,7 @@ pre {
 }
 
 a {
-  color: grey;
+  color: #cc3300;
   font-size: 28px;
 
   &:visited {
@@ -30,8 +30,13 @@ a {
   }
 
   &:hover {
-    color: #fff;
-    background-color: red;
+    -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #990000;
   }
 }
 

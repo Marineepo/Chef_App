@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170616025147) do
+ActiveRecord::Schema.define(version: 20170623161049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,17 @@ ActiveRecord::Schema.define(version: 20170616025147) do
     t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "timers", force: :cascade do |t|
+    t.string   "timer_title"
+    t.integer  "timer1"
+    t.integer  "timer2"
+    t.integer  "timer3"
+    t.integer  "timer4"
+    t.integer  "timer5"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   add_foreign_key "comments", "posts"
