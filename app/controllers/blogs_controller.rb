@@ -25,10 +25,10 @@ class BlogsController < ApplicationController
   # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
-
+    @blog.user_id = current_user.id
     respond_to do |format|
       if @blog.save
-        format.html { redirect_to @blog, notice: '' }
+        format.html { redirect_to @blog, notice: 'Your blog was succesfully created!' }
         format.json { render :show, status: :created, location: @blog }
       else
         format.html { render :new }
@@ -69,6 +69,6 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:name, :body, :post_id)
+      params.require(:blog).permit(:name, :body)
     end
 end

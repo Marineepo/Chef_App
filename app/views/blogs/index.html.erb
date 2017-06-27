@@ -23,8 +23,10 @@
         <td><%= blog.email %></td>
         <td><%= blog.body %></td>
         <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if blog.user_id == current_user.id %>
+          <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+          <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

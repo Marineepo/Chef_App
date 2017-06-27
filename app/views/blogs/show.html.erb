@@ -2,21 +2,18 @@
 <p>Feel Free to post your favorite recipes</p>
 
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @blog.name %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @blog.email %>
-</p>
-
-<p>
-  <strong>Post:</strong>
-  <%= @blog.body %>
-</p>
+<div class='Owner'>
+  <p>
+    <strong>Name:</strong>
+    <%= @blog.name %>
+  </p>
+</div>  
+<div class='Recipes'>
+  <p>
+    <strong>Post:</strong>
+    <%= @blog.body %>
+  </p>
+</div>
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'Back', blogs_path %>
