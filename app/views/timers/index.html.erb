@@ -19,13 +19,13 @@
   <tbody>
     <% @timers.each do |timer| %>
       <tr>
-        <td><%= timer.timer_title %></td>
-        <td><%= timer.timer1 %></td>
+        <!--<td><%#= timer.timer_title %></td>-->
+        <!--<td><%#= timer.timer1 %></td>-->
         <!--<td><%#= timer.timer2 %></td>-->
         <!--<td><%#= timer.timer3 %></td>-->
         <!--<td><%#= timer.timer4 %></td>-->
         <!--<td><%#= timer.timer5 %></td>-->
-        <%= link_to "#{timer.timer_title}", timer %>
+        <td><%= link_to "#{timer.timer_title}", timer %></td>
         <td><%= link_to 'Edit', edit_timer_path(timer) %></td>
         <td><%= link_to 'Destroy', timer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

@@ -3,6 +3,7 @@
 
 .Home_Page {
   background-image: url("waffles-2190961_960_720.jpg");
+
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 70%;
@@ -17,8 +18,8 @@
   font-size: 24px;
   font-weight: bold;
   line-height: 8.1;
-  left: 547px;
-  top: 263px;
+  left: 677px;
+  top: 335px;
   
 }
 
@@ -39,6 +40,14 @@ ul {
     display: block;
     text-align: center;
     font-size: 28px;
+}
+
+video {
+    border-bottom-right-radius: 424px;
+    border-bottom-left-radius: 422px;
+    margin: -106px;
+    padding-left: 3px;
+    margin-left: 46px;
 }
 
 // z-index: 100;

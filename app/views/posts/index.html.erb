@@ -1,3 +1,6 @@
+<center><audio src="Salut-d-amour.mp3"controls >
+    <p>Your browser does not support HTML5 audio playback</p>
+</audio></center>
 <p id="notice"><%= notice %></p>
 <center><div class="label">
   <font color="grey"><h1>Favorite Recipes</h1></font>
@@ -14,8 +17,10 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= link_to "#{post.title}", post %></td>
+      <% if current_user.admin %>  
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>  
       </tr>
     <% end %>
   </tbody>
